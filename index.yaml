@@ -2,6 +2,50 @@ apiVersion: v1
 entries:
   drupal:
   - apiVersion: v2
+    appVersion: 5.2.0
+    created: "2024-03-18T13:15:10.639910929Z"
+    dependencies:
+    - condition: mysql.enabled
+      name: mysql
+      repository: https://charts.bitnami.com/bitnami
+      version: 9.1.7
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.6.6
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 16.13.2
+    - condition: varnish.enabled
+      name: varnish
+      repository: https://statcan.github.io/charts
+      version: 0.2.2
+    description: Drupal 8/9 variant of the Web Experience Toolkit (WxT).
+    digest: a730c9dceeef19d9d255239184d138a584a34ceac5411648606aba07fa784395
+    home: http://www.drupal.org/project/wxt
+    icon: https://bitnami.com/assets/stacks/drupal/img/drupal-stack-220x234.png
+    keywords:
+    - drupal
+    - cms
+    - wxt
+    - http
+    - web
+    - application
+    - php
+    maintainers:
+    - email: william.hearn@canada.ca
+      name: sylus
+    - email: zachary.seguin@canada.ca
+      name: zachomedia
+    name: drupal
+    sources:
+    - https://github.com/drupalwxt/wxt
+    type: application
+    urls:
+    - https://github.com/Stemirabo/helm-drupal/releases/download/drupal-0.20.1-beta8/drupal-0.20.1-beta8.tgz
+    version: 0.20.1-beta8
+  - apiVersion: v2
     appVersion: 4.0.4
     created: "2021-05-03T18:49:00.309312765Z"
     dependencies:
@@ -3694,6 +3738,50 @@ entries:
   drupal7:
   - apiVersion: v2
     appVersion: "4.54"
+    created: "2024-03-18T13:15:10.780698555Z"
+    dependencies:
+    - condition: mysql.enabled
+      name: mysql
+      repository: https://charts.bitnami.com/bitnami
+      version: 9.1.7
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.6.6
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 16.13.2
+    - condition: varnish.enabled
+      name: varnish
+      repository: https://statcan.github.io/charts
+      version: 0.2.2
+    description: Drupal 7 variant of the Web Experience Toolkit (WetKit).
+    digest: a13559d0318842af4dfefc5a5d4e4406113ec4533a41466c02dea048550f276d
+    home: http://www.drupal.org/project/wetkit
+    icon: https://bitnami.com/assets/stacks/drupal/img/drupal-stack-220x234.png
+    keywords:
+    - drupal
+    - cms
+    - wetkit
+    - http
+    - web
+    - application
+    - php
+    maintainers:
+    - email: william.hearn@canada.ca
+      name: sylus
+    - email: zachary.seguin@canada.ca
+      name: zachomedia
+    name: drupal7
+    sources:
+    - https://github.com/wet-boew/wet-boew-drupal
+    type: application
+    urls:
+    - https://github.com/Stemirabo/helm-drupal/releases/download/drupal7-0.3.5/drupal7-0.3.5.tgz
+    version: 0.3.5
+  - apiVersion: v2
+    appVersion: "4.54"
     created: "2021-05-03T18:49:01.403072231Z"
     dependencies:
     - condition: mysql.enabled
@@ -4882,6 +4970,16 @@ entries:
     version: 0.0.1
   solr:
   - apiVersion: v2
+    appVersion: 8.11.1
+    created: "2024-03-18T13:15:10.874393136Z"
+    description: A Helm chart for a Solr instance using the official Solr Operator
+    digest: 6f807ef70d5dc6805016f6124699a051b732b8c2375290c939b4bd15b53f336a
+    name: solr
+    type: application
+    urls:
+    - https://github.com/Stemirabo/helm-drupal/releases/download/solr-0.1.7/solr-0.1.7.tgz
+    version: 0.1.7
+  - apiVersion: v2
     appVersion: 8.7.0
     created: "2021-05-03T18:49:01.518693571Z"
     description: A Helm chart for a Solr instance using the official Solr Operator
@@ -4891,4 +4989,4 @@ entries:
     urls:
     - https://drupalwxt.github.io/helm-drupal/solr-0.1.0.tgz
     version: 0.1.0
-generated: "2021-05-03T18:49:00.08338119Z"
+generated: "2024-03-18T13:15:10.875197285Z"
